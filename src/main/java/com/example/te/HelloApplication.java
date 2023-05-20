@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+
 public class HelloApplication extends Application {
     @Override
     public void start(Stage Stage) throws Exception {

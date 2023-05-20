@@ -140,19 +140,19 @@ public class HelloController {
         boldMenuItem.setOnAction(event -> setTextColor());
 
 
-          //File label context menu
+        //File label context menu
         ContextMenu contextMenu1 = new ContextMenu();
         contextMenu1.getItems().addAll(newMenuItem, newWindowMenuItem, openMenuItem, saveMenuItem, saveAsMenuItem,
                 new SeparatorMenuItem(), pageSetupMenuItem, printMenuItem, new SeparatorMenuItem(), exitMenuItem);
 
-         //Edit Label context menu
+        //Edit Label context menu
         ContextMenu contextMenu2 = new ContextMenu();
         contextMenu2.getItems().addAll(undoMenuItem, deleteMenuItem, pasteMenuItem, copyMenuItem, cutMenuItem,
-         new SeparatorMenuItem(), replaceMenuItem, findpreveousMenuItem, findMenuItem, findnextMenuItem ,searchwithbingMenuItem,
-                   new SeparatorMenuItem(),gotoMenuItem , selectallMenuItem,timedateMenuItem
-             );
+                new SeparatorMenuItem(), replaceMenuItem, findpreveousMenuItem, findMenuItem, findnextMenuItem ,searchwithbingMenuItem,
+                new SeparatorMenuItem(),gotoMenuItem , selectallMenuItem,timedateMenuItem
+        );
 
-         //view label context menu
+        //view label context menu
         ContextMenu contextMenu3=new ContextMenu();
         contextMenu3.getItems().addAll(zoomOut,zoomIn,defaultZoom);
 
@@ -168,8 +168,8 @@ public class HelloController {
         fileLabel.setContextMenu(contextMenu1);
 
         editLabel.setOnMouseClicked(event ->{
-                if (event.getButton() == MouseButton.PRIMARY) {
-                    contextMenu2.show(editLabel, event.getScreenX(), event.getScreenY());
+            if (event.getButton() == MouseButton.PRIMARY) {
+                contextMenu2.show(editLabel, event.getScreenX(), event.getScreenY());
             }
         });
         editLabel.setContextMenu(contextMenu2);
@@ -332,21 +332,21 @@ public class HelloController {
     }
 
     private void newWindow() {
-            try {
+        try {
 
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
-                Parent root = fxmlLoader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+            Parent root = fxmlLoader.load();
 
-                Stage newStage = new Stage();
-                newStage.setTitle("New Window");
+            Stage newStage = new Stage();
+            newStage.setTitle("New Window");
 
-                Scene scene = new Scene(root);
-                newStage.setScene(scene);
+            Scene scene = new Scene(root);
+            newStage.setScene(scene);
 
-                newStage.show();
-            } catch (IOException e) {
-                showError("Error", "Failed to open new window.");
-            }
+            newStage.show();
+        } catch (IOException e) {
+            showError("Error", "Failed to open new window.");
+        }
 
     }
 
@@ -393,7 +393,7 @@ public class HelloController {
     }
 
     private void zoomIn(){
-       currentFontSize += 2.0;
+        currentFontSize += 2.0;
         textArea.setStyle("-fx-font-size: " + currentFontSize + "px;");
     }
 
