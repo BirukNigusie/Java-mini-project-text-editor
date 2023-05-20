@@ -1,0 +1,125 @@
+body {
+  background-color: #282828;
+  color: #F8F8F2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add padding to the text area */
+textarea {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+/* Set the background color of the text area */
+textarea:focus {
+  outline: none;
+}
+
+/* Set the color of selected text */
+::-moz-selection {
+  background: #66D9EF;
+  color: #F8F8F2;
+}
+
+::selection {
+  background: #66D9EF;
+  color: #F8F8F2;
+}
+
+/* Set the color of the cursor */
+textarea::selection {
+  background: #66D9EF;
+  color: #F8F8F2;
+}
+
+/* Set the color of the line numbers */
+.line-number {
+  color: #75715E;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+}
+
+/* Set the color of the gutter */
+.gutter {
+  background-color: #424242;
+  border-right: 1px solid #75715E;
+  padding: 0 5px;
+  user-select: none;
+}
+
+/* Set the color of the active line */
+.active-line {
+  background-color: #3E3D32;
+}
+
+/* Set the color of the search results */
+.search-result {
+  background-color: #FD971F;
+  color: #F8F8F2;
+}
+
+/* Set the color of the brackets */
+.bracket {
+  color: #F8F8F2;
+}
+
+/* Set the color of comments */
+.comment {
+  color: #75715E;
+  font-style: italic;
+}
+
+/* Set the color of keywords */
+.keyword {
+  color: #F92672;
+}
+
+/* Set the color of strings */
+.string {
+  color: #E6DB74;
+}
+
+/* Set the color of numbers */
+.number {
+  color: #AE81FF;
+}
+
+/* Set the color of operators */
+.operator {
+  color: #F8F8F2;
+}
+
+/* Set the color of punctuation */
+.punctuation {
+  color: #F8F8F2;
+}
+
+/* Set the color of functions */
+.function {
+  color: #A6E22E;
+}
+
+/* Set the color of classes */
+.class {
+  color: #66D9EF;
+}
+
+/* Set the color of variables */
+.variable {
+  color: #FD971F;
+}
+
+/* Set the color of constants */
+.constant {
+  color: #F92672;
+}

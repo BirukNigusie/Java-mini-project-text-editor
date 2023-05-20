@@ -8,19 +8,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+
 public class HelloApplication extends Application {
     @Override
     public void start(Stage Stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
-        Image logo = new Image("C:\\Users\\MULUYE\\OneDrive\\Desktop/one.png");
-        Stage.getIcons().add(logo);
-        ImageView logoImageView = new ImageView(logo);
-        logoImageView.setFitWidth(500);
-        logoImageView.setFitHeight(500);
-        // Create a new Image object with the scaled logo imageh
-        WritableImage logoImage = logoImageView.snapshot(new SnapshotParameters(), null);
         BorderPane root = loader.load();
         Scene scene = new Scene(root, 600, 400);
+        scene.getStylesheets().add("style.css");
         Stage.setScene(scene);
         Stage.show();
     }
